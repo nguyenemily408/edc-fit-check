@@ -1,0 +1,15 @@
+{
+  "framework": null,
+  "outputDirectory": "public",
+  "rewrites": [
+    {"source": "/", "destination": "/api/board?boardRoute=home"},
+    {"source": "/admin", "destination": "/api/board?boardRoute=admin"},
+    {"source": "/g/:guest", "destination": "/api/board?boardRoute=join&guest=:guest"},
+    {"source": "/join", "destination": "/api/board?boardRoute=join"},
+    {"source": "/idea", "destination": "/api/board?boardRoute=idea"},
+    {"source": "/inspo", "destination": "/api/board?boardRoute=inspo"},
+    {"source": "/remove-photo", "destination": "/api/board?boardRoute=remove-photo"},
+    {"source": "/vote", "destination": "/api/board?boardRoute=vote"},
+    {"source": "/deadline", "destination": "/api/board?boardRoute=deadline"}
+  ]
+}

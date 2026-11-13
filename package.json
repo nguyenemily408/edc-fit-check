@@ -1,0 +1,11 @@
+{
+  "name": "edc-fit-check",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node --check api/board.js && node --check lib/board.js && node --check lib/storage.js && node --check lib/voting.js"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.2"
+  }
+}
